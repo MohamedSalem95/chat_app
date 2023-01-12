@@ -1,0 +1,10 @@
+
+<div id="message-container">
+	<% if messages.any? %>
+		<% messages.each do |message| %>
+			<p class="text-gray-600 font-medium my-2"> <%= message.content %> </p>
+			<hr />
+		<% end %>
+
+	<% end %>
+</div>

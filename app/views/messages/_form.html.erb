@@ -1,0 +1,6 @@
+<div class="mt-3">
+	<%= form_with model: Message.new, remote: true do |f| %>
+		<%= f.text_field :content, class: 'border border-gray-600 outline-none p-1 rounded w-96', id: 'my-input', placeholder: 'type a message ...', autofocus: true %>
+		<%= f.submit 'send', class: 'cursor-pointer bg-green-600 text-white rounded px-3 py-1 font-medium' %>
+	<% end %>
+</div>
